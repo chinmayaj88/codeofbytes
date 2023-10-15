@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="Converter3.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="header">Unit Converter</h1>
+      <div class="tab-titles">
+        <p
+          class="tab-links active-link"
+          data-tab="length"
+          onclick="opentab('length', event)"
+        >
+        Length
+        </p>
+        <p
+          class="tab-links"
+          data-tab="temperature"
+          onclick="opentab('temperature', event)"
+        >
+          Temperature
+        </p>
+        <p
+          class="tab-links"
+          data-tab="weight"
+          onclick="opentab('weight', event)"
+        >
+          Weight
+        </p>
+        <p class="tab-links" data-tab="time" onclick="opentab('time', event)">
+          Time
+        </p>
+      </div>
+      <div class="tab-contents active-tab" id="length">
+        <div class="input">
+          <input type="text" placeholder="Input" id="lengthInput" />
+          <select id="lengthInputType">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+          </select>
+        </div>
+        <span></span>
+        <div class="result">
+          <input type="text" placeholder="Result" id="lengthResult" />
+          <select id="lengthResultType">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tab-contents" id="temperature">
+        <div class="input">
+          <input type="text" placeholder="Input" id="temperatureInput" />
+          <select id="temperatureInputType">
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">Fahrenheit</option>
+          </select>
+        </div>
+        <span></span>
+        <div class="result">
+          <input type="text" placeholder="Result" id="temperatureResult" />
+          <select id="temperatureResultType">
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">Fahrenheit</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tab-contents" id="weight">
+        <div class="input">
+          <input type="text" placeholder="Input" id="weightInput" />
+          <select id="weightInputType">
+            <option value="kilogram">Kilogram</option>
+            <option value="gram">Gram</option>
+            <option value="milligram">Milligram</option>
+            <option value="pound">Pound</option>
+          </select>
+        </div>
+        <span></span>
+        <div class="result">
+          <input type="text" placeholder="Result" id="weightResult" />
+          <select id="weightResultType">
+            <option value="kilogram">Kilogram</option>
+            <option value="gram">Gram</option>
+            <option value="milligram">Milligram</option>
+            <option value="pound">Pound</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tab-contents" id="time">
+        <div class="input">
+          <input type="text" placeholder="Input" id="timeInput" />
+          <select id="timeInputType">
+            <option value="second">Second</option>
+            <option value="minute">Minute</option>
+            <option value="hour">Hour</option>
+          </select>
+        </div>
+        <span></span>
+        <div class="result">
+          <input type="text" placeholder="Result" id="timeResult" />
+          <select id="timeResultType">
+            <option value="second">Second</option>
+            <option value="minute">Minute</option>
+            <option value="hour">Hour</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="Converter3.js"></script>
+  </body>
+</html>
